@@ -42,9 +42,7 @@ function participantesDe(subastaId: string) {
   return new Set(ofertas.filter((o) => o.subastaId === subastaId).map((o) => o.compradorId)).size
 }
 
-function ofertasDe(subastaId: string) {
-  return ofertas.filter((o) => o.subastaId === subastaId).length
-}
+
 
 function ofertaMasAltaDe(subasta: Subasta) {
   if (subasta.cafes.length === 0) return 0
