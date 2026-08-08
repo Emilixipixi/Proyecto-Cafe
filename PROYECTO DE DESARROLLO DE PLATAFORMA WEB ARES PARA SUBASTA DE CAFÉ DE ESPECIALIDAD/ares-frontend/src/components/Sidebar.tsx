@@ -1,9 +1,8 @@
 import { NavLink } from 'react-router'
 import {
-  LayoutDashboard, Users, User, Coffee, Trophy,
+  LayoutDashboard, History, Users, User, Coffee, Trophy,
   Package, Gavel, CreditCard, Wallet, FileBarChart, Settings, X,
 } from 'lucide-react'
-
 const enlaces = [
   { nombre: 'Dashboard', ruta: '/admin', icono: LayoutDashboard, fin: true },
   { nombre: 'Compradores', ruta: '/admin/compradores', icono: Users },
@@ -16,6 +15,7 @@ const enlaces = [
   { nombre: 'Pagos', ruta: '/admin/pagos', icono: Wallet },
   { nombre: 'Reportes', ruta: '/admin/reportes', icono: FileBarChart },
   { nombre: 'Configuración', ruta: '/admin/configuracion', icono: Settings },
+  { nombre: 'Historial', ruta: '/admin/historial', icono: History },
 ]
 
 interface SidebarProps {

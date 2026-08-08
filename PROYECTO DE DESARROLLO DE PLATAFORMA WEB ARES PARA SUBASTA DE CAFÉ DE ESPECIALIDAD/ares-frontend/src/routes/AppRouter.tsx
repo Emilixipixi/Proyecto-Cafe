@@ -27,7 +27,7 @@ import AdministracionCompradores from '../pages/AdministracionCompradores'
 import SalaSubasta from '../pages/SalaSubasta'
 import Suscripcion from '../pages/Suscripcion'
 import AdministracionConcursos from '../pages/AdministracionConcursos'
-
+import AdministracionHistorial from '../pages/AdministracionHistorial'
 function AppRouter() {
   return (
     <Routes>
@@ -74,6 +74,7 @@ function AppRouter() {
           <Route path="/admin/muestras" element={<AdministracionMuestras />} />
           <Route path="/admin/compradores" element={<AdministracionCompradores />} />
           <Route path="/admin/concursos" element={<AdministracionConcursos />} />
+          <Route path="/admin/historial" element={<AdministracionHistorial />} />
         </Route>
       </Route>
 

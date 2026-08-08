@@ -131,4 +131,6 @@ export const compradores: Comprador[] = [
     suscripcion: 'premium',
     estado: 'activo',
   },
+  
+
 ]

@@ -4,13 +4,16 @@ import { BrowserRouter } from 'react-router'
 import './index.css'
 import App from './App.tsx'
 import { AuthProvider } from './hooks/AuthContext'
+import { AuditoriaProvider } from './hooks/AuditoriaContext'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
     <BrowserRouter>
-      <AuthProvider>
-        <App />
-      </AuthProvider>
+      <AuditoriaProvider>
+        <AuthProvider>
+          <App />
+        </AuthProvider>
+      </AuditoriaProvider>
     </BrowserRouter>
   </StrictMode>,
 )
